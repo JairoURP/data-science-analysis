@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Indica el generador -->
+    <meta name="generator" content="Jairo 0.0.1" />
+    <!-- Codificación de caracteres de Unicode -->
+    <meta charset="UTF-8" />
+    <!-- Indicación a los robots de los motores de búsqueda que indexen y sigan los enlaces de la página -->
+    <meta name="robots" content="index, follow" />
+    <!-- La pantalla se ajustará de acuerdo al ancho del dispositivo y que el zoom inicial sea con respecto a 1 y que el usuario no podrá ajustar el tamaño de la ventana -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Compatible con google -->
+    <meta http-equiv="x-ua-compatible" content="ie=google" />
+    <!-- Título -->
+    <title>Data Science Analysis</title>
+    <!-- Proporciando palabras clave -->
+    <meta name="keywords" content="Data Science Analysis" />
+
+    <!-- Para el uso de bootstrap requerimos linkear una referencia css que se coloca en el head, sólo si se quieren estilos -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Tipo de letras y fuente - Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link href="src/img/empresa/favicon.png" rel="icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="src/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="src/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="src/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="src/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="src/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="src/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Uso de enlace css, que se cargue antes el estilo que la estructura -->
+    <!-- <link rel="preload" href="build/css/app.css" as="style" /> -->
+    <link href="build/css/app.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div
+        class="container d-flex align-items-center justify-content-lg-between"
+      >
+        <h1 class="logo me-auto me-lg-0">
+          <a href="index.html"
+            ><img src="src/img/empresa/Logo.png" alt="Logo de la empresa"
+          /></a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="build/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio">Cursos</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#clientes"
+                >Clientes Corporativos</a
+              >
+            </li>
+            <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <a
+          href="https://w.app/DataScienceAnalysis"
+          class="get-started-btn scrollto"
+          >Conversemos por WhatsApp</a
+        >
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          <div class="col-xl-6 col-lg-8">
+            <h1>Capacítate profesionalmente con nosotros<span>.</span></h1>
+            <h2>Data Science se caracteriza por sus valores</h2>
+          </div>
+        </div>
+
+        <div
+          class="row gy-4 mt-5 justify-content-center"
+          data-aos="zoom-in"
+          data-aos-delay="250"
+        >
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-medal"></i>
+              <h3>Calidad</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-users-gear"></i>
+              <h3>Integridad</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-circle-check"></i>
+              <h3>Excelencia</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <h3>Compromiso</h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>Tecnología</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 order-1 order-lg-2 about-container"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <!-- Insternando un video -->
+              <div class="video-container">
+                <video width="640" controls>
+                  <source
+                    src="src/video/Data Science Analysis.mp4"
+                    type="video/mp4"
+                  />
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <h3>
+                Somos un grupo de profesionales con amplia experiencia en campos
+                de la ingeniería en el sector Privado.
+              </h3>
+              <p class="fst-italic">
+                Buscamos reforzar habilidades a través de especializaciones
+                Online en vivo, logrando así:
+              </p>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i> Capacitar profesionales
+                  de ingeniería.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Enriquecer los
+                  conocimientos a nuestro alumnos.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Brindar mayores
+                  oportunidades en el campo laboral y/o profesional.
+                </li>
+              </ul>
+              <!-- <p>
+                La filosofía que orienta el accionar de nuestra empresa es la
+                calidad total. Cada capacitación que desarrollamos es efectuada
+                con absoluta seriedad, rigurosidad y enfoque pedagógico.
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Plataforms Section ======= -->
+      <section id="clients" class="clients container">
+        <div class="container" data-aos="zoom-in">
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/Excel.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/MySQL.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/PHP.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/Power-Apps.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/PowerAutomate.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/PowerBI.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/Python-logo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/sql-server.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/Visual-Basic.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="src/img/plataformas/Wordpress.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="image col-lg-6"
+              style="background-image: url('src/img/features.jpg')"
+              data-aos="fade-right"
+            ></div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <div
+                class="icon-box mt-5 mt-lg-0"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-receipt"></i>
+                <h4>Misión:</h4>
+                <p>
+                  La misión de Data Science Analysis es capacitar a nuestros
+                  estudiantes profesionales con herramientas tecnológicas para
+                  que puedan resolver y/o implementar procesos en sus empresas
+                  generando agilidad de información, ahorro de tiempo y sobre
+                  todo que nuestros alumnos destaquen como auditores o analistas
+                  en sus empresas generando valor agregado a cada uno de los
+                  procesos donde intervengan.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-cube-alt"></i>
+                <h4>Valor:</h4>
+                <p>
+                  La visión de Data Science Analysis es ser el centro de
+                  capacitación más importante del Perú y Latinoamérica en
+                  análisis de datos, programación y consultoría con el
+                  compromiso de formar a nuestros estudiantes como los mejores
+                  en las ramas mencionadas
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-images"></i>
+                <h4>Legalmente asociados al:</h4>
+                <p>COLEGIOS DE INGENIEROS DEL PERÚ</p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="zoom-in"
+                data-aos-delay="150"
+              >
+                <i class="bx bx-shield"></i>
+                <h4>Convenio legal con:</h4>
+                <p>CÁMARA DEL COMERCIO DE LIMA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= Client Section ======= -->
+      <section id="clients" class="clients container">
+        <h1 data-aos="fade-right">
+          <i class="fa-solid fa-globe"></i> Empresas que confían en nosotros
+        </h1>
+        <div class="clients__grid" data-aos="fade-up">
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-1.png" alt="Cliente 1" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-2.png" alt="Cliente 2" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-3.png" alt="Cliente 3" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-4.png" alt="Cliente 4" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-5.png" alt="Cliente 5" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-6.png" alt="Cliente 6" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-7.png" alt="Cliente 7" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-8.png" alt="Cliente 8" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-9.png" alt="Cliente 9" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-10.png" alt="Cliente 10" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-11.png" alt="Cliente 11" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-12.png" alt="Cliente 12" />
+          </div>
+          <div></div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-13.png" alt="Cliente 13" />
+          </div>
+          <div class="cliente">
+            <img src="src/img/clientes/cliente-14.png" alt="Cliente 14" />
+          </div>
+        </div>
+      </section>
+      <!-- End Clients Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Cursos virtuales para todos</h3>
+            <p>
+              Contamos con una gran variedad de material gratuito y promociones.
+              Nuestro cursos se adaptan a tus necesidades, son fáciles de
+              entender, te brindamos una guía en tu aprendizaje, estudia con
+              nosotros y mejora como profesional.
+            </p>
+            <a
+              class="cta-btn"
+              href="https://datascienceanalysis.leadgods.com/es/"
+              target="_blank"
+              >Empieza aprender ahora</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Cursos</h2>
+            <p>Revisa nuestros Cursos</p>
+          </div>
+
+          <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-app">Capacitaciones en Vivo</li>
+                <li data-filter=".filter-card">Clases grabadas</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="cursos__clases-grabadas">
+            <h2>
+              <i class="fa-solid fa-graduation-cap"></i>
+              Clases Asincróncicas - Grabadas
+            </h2>
+          </div>
+
+          <div class="cursos__grid" data-aos="fade-up" data-aos-delay="200">
+            <div class="curso">
+              <img
+                src="src/img/cursos/curso-1.jpg"
+                alt="Curso 1"
+                class="img-fluid"
+              />
+              <h3>MICROSOFT EXCEL PROFESIONAL - BÁSICO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                Excel es una de las herramientas ofimáticas más utilizadas en el
+                entorno profesional. Pues nos permite realizar cálculos y
+                analizar información en distintos ámbitos laborales.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-2.jpg" alt="Curso 2" />
+              <h3>PHYTON ORIENTADO AL ANÁLISIS DE DATOS PBI - AVANZADO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                Este curso es de carácter teórico-práctico. En el curso, el
+                participante aprenderá a publicar dashboard e informes a partir
+                del análisis de datos para la toma de decisiones, utilizando
+                Power BI, una herramienta de análisis empresarial.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-3.jpg" alt="Curso 3" />
+              <h3>
+                INTELIGENCIA ARTIFICIAL MACHINE LEARNING APLICANDO LENGUAJE
+                PYTHON - INTERMEDIO
+              </h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                Python es un lenguaje de programación que se caracteriza por ser
+                fácil de comprender, ya que su sintaxis -o forma de escribirsees
+                similar al inglés.Además, se trata de una de las habilidades
+                claves para el crecimiento laboral de programadores,
+                desarrolladores.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-4.jpg" alt="Curso 4" />
+              <h3>PRIMAVERA P6 & POWER BI</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                El curso "Primavera P6 & Power BI for Project Control - Básico"
+                está diseñado para proporcionar a los participantes las
+                habilidades fundamentales necesarias para utilizar dos
+                herramientas clave en la gestión de proyectos: Primavera P6 y
+                Power BI.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-5.jpg" alt="Curso 5" />
+              <h3>POWER APPS & POWER AUTOMATE - BÁSICO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                El curso "POWER APPS & POWER AUTOMATE" está diseñado para
+                proporcionar a los participantes las habilidades necesarias para
+                crear aplicaciones empresariales personalizadas y automatizar
+                procesos utilizando las herramientas de Microsoft Power
+                Platform: Power Apps y Power Automate.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-6.jpg" alt="Curso 6" />
+              <h3>AUTODESK AUTOCAD - INTERMEDIO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                El curso "Autodesk AutoCAD - Intermedio" está diseñado para
+                proporcionar a los participantes un conocimiento más profundo y
+                habilidades avanzadas en el uso de AutoCAD, una de las
+                principales herramientas de diseño asistido por computadora
+                (CAD) utilizada en arquitectura, ingeniería, construcción y
+                otras industrias relacionadas.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-7.jpg" alt="Curso 7" />
+              <h3>CERTIFICACIÓN PMI-RMP - BÁSICO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                El curso "Certificación PMI-RMP - Básico" está diseñado para
+                proporcionar a los participantes una comprensión fundamental de
+                los principios, prácticas y procesos relacionados con la gestión
+                del riesgo en proyectos, según lo establecido por el Project
+                Management Institute (PMI) y su certificación Risk Management
+                Professional (PMI-RMP).
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-8.jpg" alt="Curso 8" />
+              <h3>AUTODESK INFRAWORKS - AVANZADO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                En este curso, los participantes aprenderán técnicas avanzadas
+                para optimizar el flujo de trabajo, mejorar la precisión del
+                modelado y aprovechar al máximo las características y
+                herramientas avanzadas de Autodesk InfraWorks.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-9.jpg" alt="Curso 9" />
+              <h3>SOLIDWORKS - AVANZADO</h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                En este curso, los participantes aprenderán técnicas avanzadas
+                para optimizar su flujo de trabajo, mejorar la precisión del
+                modelado y aprovechar al máximo las características y
+                herramientas avanzadas de SOLIDWORKS.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+          </div>
+
+          <div class="cursos__clases-vivo">
+            <h2>
+              <i class="fa-solid fa-chalkboard-user"></i>
+              Capacitaciones en vivo
+            </h2>
+          </div>
+
+          <div class="cursos__grid" data-aos="fade-up" data-aos-delay="200">
+            <div class="curso">
+              <img
+                src="src/img/cursos/vivo/microsoft.jpg"
+                alt="Curso 1"
+                class="img-fluid"
+              />
+              <h3>MICROSOFT</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Microsoft Corporation es una empresa tecnológica multinacional
+                con sede en Redmond, Washington, Estados Unidos. «Microsoft» es
+                un acrónimo de microordenador y software.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/vivo/base-datos.jpg" alt="Curso 2" />
+              <h3>BASE DE DATOS</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Una base de datos es una recopilación organizada de información
+                o datos estructurados, que normalmente se almacena de forma
+                electrónica en un sistema informático
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/vivo/programacion.jpg" alt="Curso 3" />
+              <h3>
+                PROGRAMACION
+              </h3>
+              <h4>ASINCRÓNICO - GRABADO</h4>
+              <p>
+                Python es un lenguaje de programación que se caracteriza por ser
+                fácil de comprender, ya que su sintaxis -o forma de escribirsees
+                similar al inglés.Además, se trata de una de las habilidades
+                claves para el crecimiento laboral de programadores,
+                desarrolladores.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+          <div class="row no-gutters">
+            <div
+              class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            ></div>
+            <div
+              class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <div class="content d-flex flex-column justify-content-center">
+                <h3>Capacitaciones</h3>
+                <p>
+                  Brindamos capacitaciones en herramientas de programación e
+                  inteligencia artificial, así como del entorno Microsoft para
+                  el análisis de datos desde el nivel principiante al nivel
+                  experto. Dirigido por ingenieros con amplia experiencia en el
+                  manejo de softwares robustos y competitivos.
+                </p>
+                <div class="row">
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-emoji-smile"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="65"
+                        data-purecounter-duration="2"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Clientes Satisfechos</strong> consequuntur
+                        voluptas nostrum aliquid ipsam architecto ut.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-journal-richtext"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="85"
+                        data-purecounter-duration="2"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Certificaciones</strong> adipisci atque cum quia
+                        aspernatur totam laudantium et quia dere tan
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-clock"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="35"
+                        data-purecounter-duration="4"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Años de experencia</strong> aut commodi quaerat
+                        modi aliquam nam ducimus aut voluptate non vel
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-award"></i>
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="20"
+                        data-purecounter-duration="4"
+                        class="purecounter"
+                      ></span>
+                      <p>
+                        <strong>Premios</strong> rerum asperiores dolor alias
+                        quo reprehenderit eum et nemo pad der
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End .content-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Servicios</h2>
+            <p>¿Por qué estudiar con nosotros?</p>
+          </div>
+
+          <div class="row">
+            <!-- <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Clases 100% en vivo</a></h4>
+                <p>Aprende en tiempo real a través de Zoom.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Certificado global</a></h4>
+                <p>Entregas de certificados de validez internacional.</p>
+              </div>
+            </div> -->
+
+            <!-- <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Docentes Consultores</a></h4>
+                <p>
+                  Contamos con una amplia variedad de especialistas que te
+                  guiarán paso a paso.
+                </p>
+              </div>
+            </div> -->
+
+            <!-- <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Docentes Consultores</a></h4>
+                <p>
+                  Contamos con una amplia variedad de especialistas que te
+                  guiarán paso a paso.
+                </p>
+              </div>
+            </div> -->
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Clases Grabadas</a></h4>
+                <p>Visualiza todas tus clases grabadas en tu campus virtual.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <h4><a href="">Grupo de Soporte</a></h4>
+                <p>
+                  Contarás con un coordinador asignado para ayudarte en tu
+                  aprendizaje.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Clases Prácticas</a></h4>
+                <p>
+                  Cada clase tiene misiones de casuísticas empresariales 100%
+                  prácticas.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Clases Prácticas</a></h4>
+                <p>
+                  Cada clase tiene misiones de casuísticas empresariales 100%
+                  prácticas.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Clases Prácticas</a></h4>
+                <p>
+                  Cada clase tiene misiones de casuísticas empresariales 100%
+                  prácticas.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Clases Prácticas</a></h4>
+                <p>
+                  Cada clase tiene misiones de casuísticas empresariales 100%
+                  prácticas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="src/img/testimonios/testimonios-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="src/img/testimonios/testimonios-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="src/img/testimonios/testimonios-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="src/img/testimonios/testimonios-4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img
+                    src="src/img/testimonios/testimonios-5.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                    fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Equipo</h2>
+            <p>Nuestros Ponentes</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img
+                    src="src/img/equipo/equipo-1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img
+                    src="src/img/equipo/equipo-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img
+                    src="src/img/equipo/equipo-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img
+                    src="src/img/equipo/equipo-4.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Team Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contacto</h2>
+            <p>Contáctanos</p>
+          </div>
+
+          <div>
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Dirección:</h4>
+                  <p>
+                    Jr. Rocca de Vergalla 493 Magdalena del Mar, <br />
+                    Edificio Smart Boutique, oficina 1106
+                  </p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>administracion@dsanalysis.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Teléfono:</h4>
+                  <p>+51 959 495 927</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Tu mensaje fue enviado, gracias!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Enviar mensaje</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Data Science Analysis<span>.</span></h3>
+                <p>
+                  Jr. Rocca de Vergalla 493
+                  <br />
+                  Magdalena del Mar, <br />
+                  Edificio Smart Boutique, oficina 1106<br /><br />
+                  <strong>Teléfono:</strong> +51 959 495 927<br />
+                  <strong>Email:</strong> administracion@dsanalysis.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="bx bxl-skype"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Enlaces Útiles</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Inicio</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Nosotros</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Servicios</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Términos de servicio</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Política de Privacidad</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Nuestros Servicios</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Data Science Analysis</span></strong
+          >. Todos los derechos reservados
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="src/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="src/vendor/aos/aos.js"></script>
+    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="src/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="src/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="src/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

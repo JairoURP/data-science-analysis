@@ -1,0 +1,5 @@
+//Se llaman a todos los archivos sass de la carpeta base    
+@forward 'variables';
+@forward 'mixins';
+@forward 'normalize';
+@forward 'globals';

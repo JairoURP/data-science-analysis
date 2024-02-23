@@ -1,0 +1,50 @@
+//Se importa la clase de variables
+@use 'variables' as v;
+
+@mixin heading($color: black, $border-radius: false) {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: $color;
+    letter-spacing: 1px;
+    background-color: black;
+
+    @if $border-radius {
+        border-radius: 1rem;
+    }
+}
+
+//Para el teléfono
+@mixin phone {
+    @media (width > v.$phone) {
+        //Cuando se especifica content, significa que el código interno de este mixin se agrega externamente
+        @content;
+    }
+}
+
+//Para la tablet
+@mixin tablet {
+    @media (width > v.$tablet) {
+        @content;
+    }
+}
+
+//Para la computadora de tamaño medio
+@mixin desktop {
+    @media (width > v.$desktop) {
+        @content;
+    }
+}
+
+//Para la computadora de tamaño largo
+@mixin desktopLarge {
+    @media (width > v.$desktopLarge) {
+        @content;
+    }
+}
+
+//Definiendo un grid
+@mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}

@@ -1,0 +1,3 @@
+//Se busca usar todo lo que hay dentro de la carpeta base, se importan todos los archivos scss, se busca que se conviertan en un sólo archivo css app
+@use 'base';
+@use 'layout';

@@ -1,0 +1,78 @@
+//_globals es un archivo secundario donde se podrán poner las variables globales, se busca la segmentación del código
+
+//Se importan las variables y que se llame por v
+@use "variables" as v;
+
+//Acá se pone el hack
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 2rem;
+  color: v.$black;
+  line-height: 1.5;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  color: #a61612;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a61612;
+}
+
+h1,
+h2,
+h3 {
+  //Que posea márgenes solo abajo
+  margin: 0 0 5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
