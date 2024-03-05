@@ -276,7 +276,7 @@
    * Testimonials slider
    */
   new Swiper(".testimonials-slider", {
-    speed: 600,
+    speed: 900,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -307,3 +307,33 @@
    */
   new PureCounter();
 })();
+
+
+//Reproducción de Historia de Youtube
+// let player;
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player("player", {
+//     height: "100%",
+//     width: "100%",
+//     videoId: "shorts/W8tPspJ1STo", // Reemplaza VIDEO_ID con el ID de tu video de YouTube
+//     playerVars: {
+//       autoplay: 1,
+//       controls: 0,
+//       showinfo: 0,
+//       rel: 0,
+//       modestbranding: 1,
+//     },
+//     events: {
+//       onReady: onPlayerReady,
+//       onStateChange: onPlayerStateChange,
+//     },
+//   });
+// }
+// function onPlayerReady(event) {
+//   event.target.playVideo();
+// }
+// function onPlayerStateChange(event) {
+//   if (event.data === YT.PlayerState.ENDED) {
+//     // Evento opcional para realizar acciones cuando el video termina
+//   }
+// }

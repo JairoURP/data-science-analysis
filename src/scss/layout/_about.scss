@@ -44,9 +44,11 @@
   overflow: hidden; /* Ocultar cualquier contenido que se desborde */
 }
 
-.about video {
+.about iframe {
   width: 100%;
-  height: 100%;
   display: block;
 }
 
+.about p {
+  color: #fff;
+}

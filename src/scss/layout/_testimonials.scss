@@ -2,14 +2,48 @@
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  padding: 0;
+  background: url("/src/img/testimonios-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
 }
 
-.testimonials::before {
+.testimonials .container {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #000;
+  padding: 5rem;
+}
+
+.testimonials .container .testimonials__title h3 {
+  font-family: "Poppins", sans-serif;
+  color: #ff3333;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.testimonial-item .video-historia {
+  position: relative;
+  width: 560px;
+  height: 315px;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.testimonial-item .video-historia iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.contenedor-video .testimonials::before {
   content: "";
   position: absolute;
   left: 0;
@@ -41,16 +75,16 @@
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 20px;
+  font-size: 3rem;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin: 2rem 0 1rem 0;
   color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
+  font-size: 2rem;
   color: #ddd;
-  margin: 0 0 15px 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .testimonials .testimonial-item .quote-icon-left,

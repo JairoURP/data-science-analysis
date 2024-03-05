@@ -18,17 +18,15 @@
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-info h3 {
-  font-size: 28px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
+#footer .footer-top .footer-info img {
+  margin: 0 0 2rem 0;
+  padding: 0.2rem;
   line-height: 1;
-  font-weight: 700;
-  text-transform: uppercase;
+  width: 23rem;
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #a61612;
+  color: #bc1300;
 }
 
 #footer .footer-top .footer-info p {
@@ -55,7 +53,7 @@
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #a61612;
+  background: #bc1300;
   color: #151515;
   text-decoration: none;
 }
@@ -80,7 +78,7 @@
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #a61612;
+  color: #bc1300;
   font-size: 18px;
   line-height: 1;
 }
@@ -103,7 +101,7 @@
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #a61612;
+  color: #bc1300;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -129,14 +127,14 @@
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #a61612;
-  color: #151515;
+  background: #bc1300;
+  color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #a61612;
+  background: #bc1300;
 }
 
 #footer .copyright {

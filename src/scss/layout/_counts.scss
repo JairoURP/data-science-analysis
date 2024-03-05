@@ -7,8 +7,8 @@
 
 .counts .content h3 {
   font-weight: 700;
-  font-size: 34px;
-  color: #151515;
+  font-size: 4rem;
+  color: #bc1300;
 }
 
 .counts .content p {
@@ -23,7 +23,7 @@
 .counts .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #a61612;
+  color: #bc1300;
   float: left;
 }
 
@@ -32,7 +32,7 @@
   line-height: 30px;
   display: block;
   font-weight: 700;
-  color: #151515;
+  color: #fff;
   margin-left: 50px;
 }
 
@@ -41,27 +41,38 @@
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #3b3b3b;
+  color: #fff;
 }
 
 .counts .content .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #3b3b3b;
   font-size: 15px;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .counts .content .count-box a:hover {
-  color: #626262;
+  color: #fff;
 }
 
 .counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
+  background: url("/src/img/counts-img.jpg") center center no-repeat;
   background-size: cover;
+  align-items: center;
   min-height: 400px;
+  transition: 0.7s;
+}
+
+.counts .container p {
+  color: #fff;
+}
+
+.counts .image:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {

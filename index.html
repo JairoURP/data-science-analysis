@@ -57,6 +57,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+
+    <!-- Insertar API de Youtube para reproducir historia -->
+    <script src="https://www.youtube.com/iframe_api"></script>
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -76,23 +79,28 @@
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
             <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
-            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-            <li><a class="nav-link scrollto" href="#portfolio">Cursos</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#clientes"
-                >Clientes Corporativos</a
-              >
+            <li><a class="nav-link scrollto" href="#clientes">Clientes Corporativos</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#portfolio">Capacitaciones</a></li> -->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Capacitaciones</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#clases-vivo">Capacitaciones en Vivo</a></li>
+                <li>
+                  <a href="#clases-grabadas">Capacitaciones Asincrónicas</a>
+                </li>
+              </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+            <li><a class="nav-link scrollto" href="#team">Ingenieros</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
 
-        <a
-          href="https://w.app/DataScienceAnalysis"
-          class="get-started-btn scrollto"
+        <a href="#" class="get-started-btn scrollto"
           >Conversemos por WhatsApp</a
         >
       </div>
@@ -108,8 +116,10 @@
           data-aos-delay="150"
         >
           <div class="col-xl-6 col-lg-8">
-            <h1>Capacítate profesionalmente con nosotros<span>.</span></h1>
-            <h2>Data Science se caracteriza por sus valores</h2>
+            <h1>Capacítate Profesionalmente Con Nosotros<span>.</span></h1>
+            <h2>
+              En Data Science Analysis nos diferenciamos por nuestros valores
+            </h2>
           </div>
         </div>
 
@@ -165,13 +175,15 @@
             >
               <!-- Insternando un video -->
               <div class="video-container">
-                <video width="640" controls>
-                  <source
-                    src="src/video/Data Science Analysis.mp4"
-                    type="video/mp4"
-                  />
-                  Tu navegador no soporta el elemento de video.
-                </video>
+                <iframe
+                  width="640"
+                  height="328"
+                  src="https://www.youtube.com/embed/QRGeT3RrjZQ?si=wdN_QO2qteAfy3_i"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
             <div
@@ -212,7 +224,7 @@
       </section>
       <!-- End About Section -->
 
-      <!-- ======= Plataforms Section ======= -->
+      <!-- ======= Features Section ======= -->
       <section id="clients" class="clients container">
         <div class="container" data-aos="zoom-in">
           <div class="clients-slider swiper">
@@ -452,7 +464,101 @@
             </div>
           </div> -->
 
-          <div class="cursos__clases-grabadas">
+          <div class="cursos__clases-vivo" id="clases-vivo">
+            <h2>
+              <i class="fa-solid fa-chalkboard-user"></i>
+              Capacitaciones en vivo
+            </h2>
+          </div>
+
+          <div class="cursos__grid" data-aos="fade-up" data-aos-delay="200">
+            <div class="curso">
+              <img
+                src="src/img/cursos/vivo/curso-1.jpg"
+                alt="Curso 1"
+                class="img-fluid"
+              />
+              <h3>EXCEL MACROS & POWER BI FOR BUSINESS</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Durante el curso, los participantes aprenderán a automatizar
+                tareas repetitivas en Excel mediante el uso de macros, lo que
+                les permitirá ahorrar tiempo y aumentar la precisión en sus
+                análisis de datos.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/vivo/curso-2.jpg" alt="Curso 2" />
+              <h3>PYTHON ORIENTADO AL ANÁLISIS DE DATOS CON POWER BI</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Este curso especializado combina dos poderosas herramientas en
+                el mundo del análisis de datos: Python y Power BI. A lo largo
+                del curso, los participantes aprenderán a utilizar Python como
+                complemento para potenciar el análisis de datos en Power BI
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/vivo/curso-3.jpg" alt="Curso 3" />
+              <h3>SQL SERVER & MYSQL DATA BASE</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Este curso está dirigido a profesionales de TI, desarrolladores
+                de software, analistas de datos y cualquier persona interesada
+                en adquirir habilidades en bases de datos relacionales con SQL
+                Server y MySQL.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/vivo/curso-4.jpg" alt="Curso 4" />
+              <h3>BUSINESS INTELICENCE DATA ANALYTICS EXPERT</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Este curso avanzado de Business Intelligence (BI) y análisis de
+                datos está diseñado para profesionales que buscan adquirir
+                habilidades especializadas para convertirse en expertos en el
+                campo.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/vivo/curso-5.jpg" alt="Curso 5" />
+              <h3>POWER BI PROFESSIONAL</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Este curso especializado en Power BI está diseñado para llevar
+                tus habilidades en análisis de datos al siguiente nivel y
+                convertirte en un profesional en el uso de esta poderosa
+                herramienta de inteligencia empresarial.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+
+            <div class="curso">
+              <img src="src/img/cursos/curso-3.jpg" alt="Curso 6" />
+              <h3>INTELIGENCIA ARTIFICIAL MACHINE LEARNING</h3>
+              <h4>EN VIVO</h4>
+              <p>
+                Este curso exhaustivo te llevará a través de los fundamentos de
+                la inteligencia artificial (IA) y el aprendizaje automático
+                (Machine Learning, ML), con un enfoque práctico en la
+                implementación de algoritmos utilizando el lenguaje de
+                programación Python.
+              </p>
+              <a href="#">VER MÁS</a>
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="cursos__clases-grabadas" id="clases-grabadas">
             <h2>
               <i class="fa-solid fa-graduation-cap"></i>
               Clases Asincróncicas - Grabadas
@@ -590,59 +696,6 @@
               <a href="#">VER MÁS</a>
             </div>
           </div>
-
-          <div class="cursos__clases-vivo">
-            <h2>
-              <i class="fa-solid fa-chalkboard-user"></i>
-              Capacitaciones en vivo
-            </h2>
-          </div>
-
-          <div class="cursos__grid" data-aos="fade-up" data-aos-delay="200">
-            <div class="curso">
-              <img
-                src="src/img/cursos/vivo/microsoft.jpg"
-                alt="Curso 1"
-                class="img-fluid"
-              />
-              <h3>MICROSOFT</h3>
-              <h4>EN VIVO</h4>
-              <p>
-                Microsoft Corporation es una empresa tecnológica multinacional
-                con sede en Redmond, Washington, Estados Unidos. «Microsoft» es
-                un acrónimo de microordenador y software.
-              </p>
-              <a href="#">VER MÁS</a>
-            </div>
-
-            <div class="curso">
-              <img src="src/img/cursos/vivo/base-datos.jpg" alt="Curso 2" />
-              <h3>BASE DE DATOS</h3>
-              <h4>EN VIVO</h4>
-              <p>
-                Una base de datos es una recopilación organizada de información
-                o datos estructurados, que normalmente se almacena de forma
-                electrónica en un sistema informático
-              </p>
-              <a href="#">VER MÁS</a>
-            </div>
-
-            <div class="curso">
-              <img src="src/img/cursos/vivo/programacion.jpg" alt="Curso 3" />
-              <h3>
-                PROGRAMACION
-              </h3>
-              <h4>ASINCRÓNICO - GRABADO</h4>
-              <p>
-                Python es un lenguaje de programación que se caracteriza por ser
-                fácil de comprender, ya que su sintaxis -o forma de escribirsees
-                similar al inglés.Además, se trata de una de las habilidades
-                claves para el crecimiento laboral de programadores,
-                desarrolladores.
-              </p>
-              <a href="#">VER MÁS</a>
-            </div>
-          </div>
         </div>
       </section>
       <!-- End Portfolio Section -->
@@ -662,14 +715,16 @@
               data-aos-delay="100"
             >
               <div class="content d-flex flex-column justify-content-center">
-                <h3>Capacitaciones</h3>
+                <h3><i class="fa-solid fa-file-lines"></i> Certificación</h3>
                 <p>
-                  Brindamos capacitaciones en herramientas de programación e
-                  inteligencia artificial, así como del entorno Microsoft para
-                  el análisis de datos desde el nivel principiante al nivel
-                  experto. Dirigido por ingenieros con amplia experiencia en el
-                  manejo de softwares robustos y competitivos.
+                  En nuestra empresa, entendemos la importancia de la
+                  capacitación continua y el desarrollo profesional en el campo
+                  de la tecnología. Es por eso que ofrecemos una variedad de
+                  certificaciones tecnológicas diseñadas específicamente para
+                  ingenieros que desean mantenerse actualizados en un mundo en
+                  constante evolución.
                 </p>
+                <br />
                 <div class="row">
                   <div class="col-md-6 d-md-flex align-items-md-stretch">
                     <div class="count-box">
@@ -812,8 +867,8 @@
               data-aos-delay="100"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4><a href="">Clases Grabadas</a></h4>
+                <div class="icon"><i class="fa-solid fa-video"></i></div>
+                <h4>Clases Grabadas</h4>
                 <p>Visualiza todas tus clases grabadas en tu campus virtual.</p>
               </div>
             </div>
@@ -824,8 +879,8 @@
               data-aos-delay="200"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-slideshow"></i></div>
-                <h4><a href="">Grupo de Soporte</a></h4>
+                <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                <h4>Grupo de Soporte</h4>
                 <p>
                   Contarás con un coordinador asignado para ayudarte en tu
                   aprendizaje.
@@ -839,8 +894,8 @@
               data-aos-delay="300"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4><a href="">Clases Prácticas</a></h4>
+                <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+                <h4>Clases Prácticas</h4>
                 <p>
                   Cada clase tiene misiones de casuísticas empresariales 100%
                   prácticas.
@@ -854,11 +909,10 @@
               data-aos-delay="300"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4><a href="">Clases Prácticas</a></h4>
+                <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+                <h4>Certificado global</h4>
                 <p>
-                  Cada clase tiene misiones de casuísticas empresariales 100%
-                  prácticas.
+                  Valida tu certificado en Linkedin y con QR en tiempo real.
                 </p>
               </div>
             </div>
@@ -869,11 +923,13 @@
               data-aos-delay="300"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4><a href="">Clases Prácticas</a></h4>
+                <div class="icon">
+                  <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <h4>Docentes Consultores</h4>
                 <p>
-                  Cada clase tiene misiones de casuísticas empresariales 100%
-                  prácticas.
+                  Nuestro staff de profesionales especialistas te guiarán paso a
+                  paso.
                 </p>
               </div>
             </div>
@@ -884,11 +940,11 @@
               data-aos-delay="300"
             >
               <div class="icon-box">
-                <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4><a href="">Clases Prácticas</a></h4>
+                <div class="icon"><i class="fa-solid fa-folder-open"></i></div>
+                <h4>Aprendizaje por proyectos</h4>
                 <p>
-                  Cada clase tiene misiones de casuísticas empresariales 100%
-                  prácticas.
+                  Al finalizar el curso se presenta proyectos finales del
+                  aprendizaje consolidado.
                 </p>
               </div>
             </div>
@@ -900,6 +956,9 @@
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials">
         <div class="container" data-aos="zoom-in">
+          <div class="testimonials__title">
+            <h3>Testimonios</h3>
+          </div>
           <div
             class="testimonials-slider swiper"
             data-aos="fade-up"
@@ -908,104 +967,34 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img
-                    src="src/img/testimonios/testimonios-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
+                  <a href="https://www.youtube.com/shorts/fTV6j_CkfnI" target="_blank"><img alt="Image" src="https://img.youtube.com/vi/fTV6j_CkfnI/maxresdefault.jpg" style="width: 100%;max-width: 1280px;" title="Image"></a>
+                  <!-- <div class="video-historia">
+                    <div id="player"></div>
+                  </div> -->
+                  <h3>José Aguilar Anco</h3>
+                  <h4>Primavera P6 for Project Control</h4>
                 </div>
               </div>
               <!-- End testimonial item -->
-
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img
-                    src="src/img/testimonios/testimonios-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
+                  <a href="https://www.youtube.com/shorts/W8tPspJ1STo" target="_blank"><img alt="Image" src="https://img.youtube.com/vi/W8tPspJ1STo/maxresdefault.jpg" style="width: 100%;max-width: 1280px;" title="Image"></a>
+                  <!-- <div class="video-historia">
+                    <div id="player"></div>
+                  </div> -->
+                  <h3>Albina Castañeda Boza</h3>
+                  <h4>Power BI Profesional</h4>
                 </div>
               </div>
               <!-- End testimonial item -->
-
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img
-                    src="src/img/testimonios/testimonios-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="src/img/testimonios/testimonios-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="src/img/testimonios/testimonios-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
+                  <a href="https://www.youtube.com/shorts/uKyK2Dyx_TU" target="_blank"><img alt="Image" src="https://img.youtube.com/vi/uKyK2Dyx_TU/maxresdefault.jpg" style="width: 100%;max-width: 1280px;" title="Image"></a>
+                  <!-- <div class="video-historia">
+                    <div id="player"></div>
+                  </div> -->
+                  <h3>Alexis Tovar</h3>
+                  <h4>Profesional de Grupo Mejía</h4>
                 </div>
               </div>
               <!-- End testimonial item -->
@@ -1018,103 +1007,91 @@
 
       <!-- ======= Team Section ======= -->
       <section id="team" class="team">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Equipo</h2>
-            <p>Nuestros Ponentes</p>
-          </div>
+      <div class="container" data-aos="fade-up">
 
-          <div class="row">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img
-                    src="src/img/equipo/equipo-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img
-                    src="src/img/equipo/equipo-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img
-                    src="src/img/equipo/equipo-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img
-                    src="src/img/equipo/equipo-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="section-title">
+          <h2>Ingenieros</h2>
+          <p>Nuestros Ponentes</p>
         </div>
-      </section>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="src/img/ingenieros/ingeniero-1.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>MAG. JOSE MIGUEL REYES</h4>
+                <span>Fundador/Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="src/img/ingenieros/ingeniero-2.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>ING. JAVIER REYES</h4>
+                <span>Cofundador/Sub Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="src/img/ingenieros/ingeniero-3.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>MAG. OSCAR ESPEJO</h4>
+                <span>Consultor de Proyectos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="src/img/ingenieros/ingeniero-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>ING. OMAR DURAN</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
       <!-- End Team Section -->
 
       <!-- ======= Contact Section ======= -->
@@ -1128,7 +1105,7 @@
           <div>
             <iframe
               style="border: 0; width: 100%; height: 270px"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3901.3103342011555!2d-77.05948302517405!3d-12.090894488149356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJr.%20Rocca%20de%20Vergalla%20493%20Magdalena%20del%20Mar%2C%20Edificio%20Smart%20Boutique%2C%20oficina%201106!5e0!3m2!1ses!2spe!4v1709243113467!5m2!1ses!2spe"
               frameborder="0"
               allowfullscreen
             ></iframe>
@@ -1174,7 +1151,7 @@
                       name="name"
                       class="form-control"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Nombre Completo"
                       required
                     />
                   </div>
@@ -1184,7 +1161,7 @@
                       class="form-control"
                       name="email"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Correo Electrónico"
                       required
                     />
                   </div>
@@ -1195,7 +1172,7 @@
                     class="form-control"
                     name="subject"
                     id="subject"
-                    placeholder="Subject"
+                    placeholder="Asunto"
                     required
                   />
                 </div>
@@ -1204,7 +1181,7 @@
                     class="form-control"
                     name="message"
                     rows="5"
-                    placeholder="Message"
+                    placeholder="Mensaje"
                     required
                   ></textarea>
                 </div>
@@ -1234,7 +1211,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
-                <h3>Data Science Analysis<span>.</span></h3>
+                <a href="#"><img src="src/img/empresa/Logo.png" alt="Ícono de la empresa"></a>
                 <p>
                   Jr. Rocca de Vergalla 493
                   <br />
@@ -1309,7 +1286,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Our Newsletter</h4>
+              <h4>Suscríbete</h4>
               <p>
                 Tamen quem nulla quae legam multos aute sint culpa legam noster
                 magna
@@ -1317,7 +1294,7 @@
               <form action="" method="post">
                 <input type="email" name="email" /><input
                   type="submit"
-                  value="Subscribe"
+                  value="Enviar"
                 />
               </form>
             </div>
@@ -1336,10 +1313,9 @@
 
     <div id="preloader"></div>
     <a
-      href="#"
+      href=""
       class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+      ><i class="fa-brands fa-whatsapp"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="src/vendor/purecounter/purecounter_vanilla.js"></script>

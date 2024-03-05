@@ -17,13 +17,17 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #fff;
   font-size: 1.6rem;
+  background-image: url("/src/img/fondos/fondo-2.png");
+  background-size: cover;
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
 }
 
 p {
   font-size: 2rem;
-  color: v.$black;
+  color: #000;
   line-height: 1.5;
 }
 
@@ -34,12 +38,12 @@ p {
 }
 
 a {
-  color: #a61612;
+  color: #bc1300;
   text-decoration: none;
 }
 
 a:hover {
-  color: #a61612;
+  color: #bc1300;
 }
 
 h1,

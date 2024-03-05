@@ -5,15 +5,15 @@
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #a61612;
-  width: 40px;
-  height: 40px;
+  background: #ff3333;
+  width: 6rem;
+  height: 6rem;
   border-radius: 4px;
   transition: all 0.4s;
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 4rem;
   color: #151515;
   line-height: 0;
 }
@@ -23,7 +23,7 @@
 }
 
 .back-to-top:hover i {
-  color: #a61612;
+  color: #ff3333;
 }
 
 .back-to-top.active {

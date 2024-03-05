@@ -2,7 +2,7 @@
 # Portfolio
 --------------------------------------------------------------*/
 
-// .portfolio #portfolio-flters {
+// .portfolio #portfolio-flter{
 //   padding: 0;
 //   margin: 0 auto 20px auto;
 //   list-style: none;
@@ -172,6 +172,8 @@
   font-weight: 700;
   text-align: center;
   font-size: 4.5rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
 }
 
 .cursos__clases-vivo h2 {
@@ -180,7 +182,8 @@
   font-weight: 700;
   text-align: center;
   font-size: 4.5rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -252,4 +255,12 @@
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+.portfolio .container .section-title p {
+  color: #fff;
+}
+
+.portfolio .container .cursos__grid .curso h3 {
+  color: #000;
 }
